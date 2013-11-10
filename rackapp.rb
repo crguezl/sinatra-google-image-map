@@ -18,7 +18,7 @@ end
 class MyApp < Sinatra::Base
 
   set :mongomapper, 'mongomapper://localhost:27017/exif_data'
-  set :public, File.dirname(__FILE__) + '/public'
+  #set :public_folder, File.dirname(__FILE__) + '/public'
 
   before do
     if request.env['SERVER_NAME'] == '192.168.123.100' then 
